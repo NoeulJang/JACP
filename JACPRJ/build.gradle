@@ -39,9 +39,9 @@ tasks.named('test') {
 }
 
 node {
-    workDir = file("./frontend")
-    npmWorkDir = file("./frontend")
-    nodeModulesDir = file("./frontend")
+    workDir = file("./vue")
+    npmWorkDir = file("./vue")
+    nodeModulesDir = file("./vue")
 }
 
 task setUp (type: NpmTask) {
