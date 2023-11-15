@@ -9,7 +9,7 @@ module.exports = defineConfig({
         	// 로컬 서버 테스트 시 이용
             '/api': {
                 // '/api' 로 들어오면 포트 8081(스프링 서버)로 proxy 처리
-                target: 'http://localhost:8081',
+                target: 'http://localhost:18020',
                 changeOrigin: true // cross origin 허용
             }
         }
