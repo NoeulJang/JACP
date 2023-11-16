@@ -1,7 +1,9 @@
 <template>
-  <PageHeader/> <!-- 헤더 컴포넌트 -->
-  <router-view/>  <!-- 페이지 이동이 표시될 곳 -->
-  <PageFooter/> <!-- 푸터 컴포넌트 -->
+	<PageHeader/> <!-- 헤더 컴포넌트 -->
+	<router-view/>  <!-- 페이지 이동이 표시될 곳 -->
+	<div id="wrapper">
+		<PageFooter/> <!-- 푸터 컴포넌트 -->
+	</div>
 </template>
 
 <script>
@@ -37,5 +39,13 @@ export default {
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+#wrapper{
+  height : 100%;
+}
+footer{
+  position : relative;
+  transform : translateY(-100%);
 }
 </style>
